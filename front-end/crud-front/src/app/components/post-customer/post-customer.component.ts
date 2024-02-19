@@ -25,7 +25,7 @@ export class PostCustomerComponent {
 
   postCustomer(){
     this.customerService.postCustomer(this.postCustomerForm.value).subscribe((res)=>{
-      console.log(res);
+      return res;
     })
   }
 
